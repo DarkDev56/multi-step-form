@@ -8,7 +8,7 @@ export default function Toggler()
                 <div>
                     <div>
                         <span>Monthly</span>
-                        <button onClick={() => duration === "monthly" ? setDuration("annually") : setDuration("monthly")}>
+                        <button onClick={() => duration === "monthly" ? setDuration("yearly") : setDuration("monthly")}>
                             <div>Switch</div>
                         </button>
                         <span>Yearly</span>

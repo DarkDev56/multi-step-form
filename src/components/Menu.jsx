@@ -18,7 +18,7 @@ export default function Menu()
     switch (page)
     {
         case 1:
-            return menu(<One/>);
+            return menu(<One page={page} setPage={setPage} />);
             break;
         case 2:
             return menu(<Two/>);
@@ -30,7 +30,7 @@ export default function Menu()
             return menu(<Four/>);
             break;
         case 5:
-            return menu(<Five/>);
+            return <Five/>;
             break;
     }
 }
