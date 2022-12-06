@@ -15,7 +15,7 @@ export default function One({ page, setPage })
                 heading="Personal info"
                 content="Please provide your name, email address, and phone number"
             />
-            <div>
+            <div className="flex flex-col gap-4">
                 <Input
                     name="Name"
                     type="text"

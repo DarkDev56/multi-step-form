@@ -13,7 +13,7 @@ export default function Form()
     });
 
     return (
-        <div>
+        <div className="font-primary">
             <Steps />
             <DurationContext.Provider value={{duration, setDuration}}>
                 <PlanContext.Provider value={{plan, setPlan}}>
