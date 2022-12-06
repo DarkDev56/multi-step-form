@@ -11,7 +11,7 @@ export default function Bill()
                             {({plan, setPlan}) => {
                                 const isMonthly = (duration === "monthly");
                                 const shortForm = isMonthly ? "mo" : "yr";
-                                const total = isMonthly ? plan.price : plan.price * 10;
+                                let total = isMonthly ? plan.price : plan.price * 10;
                                 addOns.forEach(addOn => {
                                     total += isMonthly ? addOn.price : addOn.price * 10;
                                 });
