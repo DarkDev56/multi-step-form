@@ -9,14 +9,15 @@ export default function Plan({name, price})
                     {({duration, setDuration}) => {
                         const isMonthly = (duration === "monthly");
                         return (
-                            <div onClick={
-                                () => setPlan({plan:{name,price}})
+                            <div className={`${plan.name === name ? 'border-marine-blue bg-alabaster' : 'border-cool-gray'} cursor-pointer p-4 border-[1px] rounded-md w-full flex flex-row gap-4`}
+                            onClick={
+                                () => setPlan({name,price})
                             }>
                                 <img src={require(`../images/icon-${name}.svg`)} alt={`icon-${name}`} />
                                 <div>
-                                    <h4 className="capitalize">{name}</h4>
-                                    <p>{`$${isMonthly ? price : price * 10}/${isMonthly ? "mo" : "yr"}`}</p>
-                                    <span className={`${isMonthly ? "hidden" : ""}`}>2 months free</span>
+                                    <h4 className="capitalize font-[700] text-marine-blue">{name}</h4>
+                                    <p className="text-cool-gray font-[500]">{`$${isMonthly ? price : price * 10}/${isMonthly ? "mo" : "yr"}`}</p>
+                                    <span className={`${isMonthly ? "hidden" : ""} text-marine-blue font-[500]`}>2 months free</span>
                                 </div>
                             </div>
                         )
