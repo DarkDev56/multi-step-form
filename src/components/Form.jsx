@@ -8,8 +8,8 @@ export default function Form()
     const [duration, setDuration] = useState("monthly");
     const [addOns, setAddOns] = useState([]);
     const [plan, setPlan] = useState({
-        name : null,
-        price: null
+        name : "arcade",
+        price: 9
     });
 
     return (

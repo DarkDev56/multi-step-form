@@ -6,7 +6,7 @@ export const DurationContext = createContext({
 });
 
 export const PlanContext = createContext({
-    plan : {name: null, price: null},
+    plan : {name: "arcade", price: 9},
     setPlan: () => {}
 });
 
