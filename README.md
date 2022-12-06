@@ -1,12 +1,15 @@
-# Fylo Dark Theme Landing Page
+# Multi Step Form
 
 ![Design preview for the News Homepage coding challenge](./design/desktop-preview.jpg)
 
 ## Technologies Used
 
 - **HTML** for markup
-
-- **SCSS** for styling
+- **TaiwindCSS** for styling
+- **PostCSS** along TailwindCSS
+- **ReactJS** as javascript library
+- **GoogleFonts** for fonts
+- **NPM** as package manager
 
 ## Links
 
