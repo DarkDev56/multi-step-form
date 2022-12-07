@@ -11,8 +11,8 @@ export default function Steps()
         <div>
             <ul>
                 {stepsContext.map((step, index) => {
-                    return <li key={index}>
-                        <span>{step.index}</span>
+                    return <li key={index} className="flex items-center gap-4">
+                        <span className="w-8 h-8 flex justify-center items-center border-[1px] border-black rounded-[50%]">{step.index}</span>
                         <div>
                             <h4>Step {step.index}</h4>
                             <p>{step.name}</p>

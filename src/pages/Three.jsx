@@ -9,7 +9,7 @@ export default function Three()
                 heading="Pick add-ons"
                 content="Add-ons help enhance your gaming experience."
             />
-            <div>
+            <div className="flex gap-3 flex-col">
                 <AddOn
                     name="Online service"
                     desc="Access to multiplayer games"

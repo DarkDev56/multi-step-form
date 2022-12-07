@@ -9,7 +9,7 @@ export default function Plan({name, price})
                     {({duration, setDuration}) => {
                         const isMonthly = (duration === "monthly");
                         return (
-                            <div className={`${plan.name === name ? 'border-marine-blue bg-alabaster' : 'border-cool-gray'} cursor-pointer p-4 border-[1px] rounded-md w-full flex flex-row gap-4`}
+                            <div className={`${plan.name === name ? 'border-marine-blue bg-magnolia' : 'border-cool-gray'} cursor-pointer p-4 border-[1px] rounded-md w-full flex flex-row gap-4`}
                             onClick={
                                 () => setPlan({name,price})
                             }>
