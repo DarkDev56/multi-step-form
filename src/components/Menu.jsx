@@ -4,33 +4,39 @@ import Three from "../pages/Three";
 import Four from "../pages/Four";
 import Five from "../pages/Five";
 import Switch from "./Switch";
-import { useState } from "react";
+import { StepContext } from "./Context";
 
 export default function Menu()
 {
-    const [page, setPage] = useState(1);
-
     const menu = tab => <div>
         {tab}
-        <Switch page={page} setPage={setPage} />
+        <Switch />
     </div>;
 
-    switch (page)
-    {
-        case 1:
-            return menu(<One page={page} setPage={setPage} />);
-            break;
-        case 2:
-            return menu(<Two/>);
-            break;
-        case 3:
-            return menu(<Three/>);
-            break;
-        case 4:
-            return menu(<Four/>);
-            break;
-        case 5:
-            return <Five/>;
-            break;
-    }
+    return (
+        <StepContext.Consumer>
+            {({step, setStep}) => {
+                console.log("aah" + step)
+                switch (step)
+                {
+                    case 1:
+                        console.log("its 1 aaaah" + step)
+                        return menu(<One step={step} setStep={setStep} />);
+                        break;
+                    case 2:
+                        return menu(<Two/>);
+                        break;
+                    case 3:
+                        return menu(<Three/>);
+                        break;
+                    case 4:
+                        return menu(<Four/>);
+                        break;
+                    case 5:
+                        return <Five/>;
+                        break;
+                }
+            }}
+        </StepContext.Consumer>
+    )
 }

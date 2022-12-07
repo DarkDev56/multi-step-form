@@ -3,14 +3,14 @@ import Input from "../components/Input";
 import { InputsContext } from "../components/Context";
 import { useState } from "react";
 
-export default function One({ page, setPage })
+export default function One({ step, setStep })
 {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [tel, setTel] = useState("");
 
     return (
-        <form id="input_form" onSubmit={() => setPage(page + 1)}>
+        <form id="input_form" onSubmit={() => setStep(step + 1)}>
             <Header
                 heading="Personal info"
                 content="Please provide your name, email address, and phone number"

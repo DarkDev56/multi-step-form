@@ -14,3 +14,8 @@ export const AddOnsContext = createContext({
     addOns: [],
     setAddOns: () => {}
 });
+
+export const StepContext = createContext({
+    step: 1,
+    setStep: () => {}
+});
