@@ -8,19 +8,21 @@ import { StepContext } from "./Context";
 
 export default function Menu()
 {
-    const menu = tab => <div>
-        {tab}
-        <Switch />
-    </div>;
+    const menu = tab => (
+        <div className="m-4 rounded-md relative z-20 bg-white top-24">
+            <div className="p-6 w-full max-w-md">
+                {tab}
+                <Switch />
+            </div>
+        </div>
+    );
 
     return (
         <StepContext.Consumer>
             {({step, setStep}) => {
-                console.log("aah" + step)
                 switch (step)
                 {
                     case 1:
-                        console.log("its 1 aaaah" + step)
                         return menu(<One step={step} setStep={setStep} />);
                         break;
                     case 2:
@@ -33,7 +35,11 @@ export default function Menu()
                         return menu(<Four/>);
                         break;
                     case 5:
-                        return <Five/>;
+                        return <div className="m-4 rounded-md relative z-20 bg-white top-24">
+                        <div className="p-6 w-full max-w-md">
+                            <Five />
+                        </div>
+                    </div>;
                         break;
                 }
             }}
