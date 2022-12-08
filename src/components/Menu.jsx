@@ -9,12 +9,15 @@ import { StepContext } from "./Context";
 export default function Menu()
 {
     const menu = tab => (
-        <div className="m-4 rounded-md relative z-20 bg-white top-24">
-            <div className="p-6 w-full max-w-md">
-                {tab}
-                <Switch />
+        <div className="mx-auto w-full max-w-md">
+            <div className="m-4 rounded-md relative z-20 bg-white top-24 ">
+                <div className="p-6 w-full max-w-md flex justify-center">
+                    {tab}
+                    <Switch />
+                </div>
             </div>
         </div>
+        
     );
 
     return (
