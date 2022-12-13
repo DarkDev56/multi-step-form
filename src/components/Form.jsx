@@ -24,10 +24,8 @@ export default function Form()
     );
 
     return (
-        <div className="font-primary md:rounded-md md:shadow-xl md:relative lg:w-full lg:max-w-5xl lg:max-h-[36rem] lg:bottom-0">
-            <div className="lg:flex">
-                <FormWithContext />
-            </div>
+        <div className="font-primary md:rounded-md md:shadow-xl lg:w-full lg:max-w-5xl lg:max-h-[36rem] lg:flex lg:overflow-hidden">
+            <FormWithContext />
         </div>
     );
 }

@@ -9,7 +9,7 @@ export default function One({ step, setStep })
     const [tel, setTel] = useState("");
 
     return (
-        <form id="input_form" onSubmit={() => setStep(step + 1)}>
+        <form id="input_form" className="" onSubmit={() => setStep(step + 1)}>
             <Header
                 heading="Personal info"
                 content="Please provide your name, email address, and phone number"

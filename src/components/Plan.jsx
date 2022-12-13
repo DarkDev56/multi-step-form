@@ -32,12 +32,12 @@ export default function Plan({name, price})
         const HandleClick = () => setPlan({name, price});
 
         return (
-            <div onClick={HandleClick} className={`${plan.name === name ? 'border-marine-blue bg-magnolia' : 'border-cool-gray'} cursor-pointer p-4 border-[1px] rounded-md w-full flex flex-row gap-4`}>
-                <img src={images[name]} alt={`icon-${name}`} />
+            <div onClick={HandleClick} className={`${plan.name === name ? 'border-marine-blue bg-magnolia' : 'border-cool-gray'} cursor-pointer p-4 border-[1px] rounded-md w-full flex flex-row gap-4 lg:p-6 lg:flex-col lg:h-30`}>
+                <img src={images[name]} alt={`icon-${name}`} className="lg:w-12" />
                 <div>
                     <h4 className="capitalize font-[700] text-marine-blue">{name}</h4>
                     <p className="text-cool-gray font-[500]">${calcPrice}/{shortForm}</p>
-                    <span className={`${isMonthly ? "hidden" : ""} text-marine-blue font-[500]`}>2 months free</span>
+                    <span className={`${isMonthly ? "hidden" : ""} text-marine-blue font-[500] lg:text-sm lg:font-[700]`}>2 months free</span>
                 </div>
             </div>
         )

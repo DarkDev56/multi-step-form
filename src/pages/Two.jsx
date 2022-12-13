@@ -10,7 +10,7 @@ export default function Two()
                 heading="Select your plan"
                 content="You have the option of monthly or yearly billing."
             />
-            <div className="flex flex-col gap-4 justify-between">
+            <div className="flex flex-col gap-4 justify-between lg:flex-row">
                 <Plan
                     name="arcade"
                     price={9}
