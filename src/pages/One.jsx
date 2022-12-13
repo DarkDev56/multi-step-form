@@ -19,14 +19,14 @@ export default function One({ step, setStep })
                     name="Name"
                     type="text"
                     placeholder="e.g. Stephen King"
-                    value={name} pattern="[A-Za-z0-9]{1,20}"
+                    value={name} pattern="[A-Za-z0-9. ]{1,20}"
                     onChange={(e) => setName(e.target.value)}
                 />
                 <Input
                     name="Email Address"
                     type="email"
                     placeholder="e.g. stephenking@lorem.com"
-                    value={email} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    value={email} pattern="[A-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <Input

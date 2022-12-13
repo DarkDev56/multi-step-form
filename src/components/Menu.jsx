@@ -7,8 +7,8 @@ import Switch from "./Switch";
 import { StepContext } from "./Context";
 
 const generateMenu = menu => (
-    <div className="mx-auto fixed top-0 left-0 w-full flex justify-center lg:left-none lg:max-w-5xl md:relative md:top-[-6.5rem] lg:top-0">
-        <div className="m-4 lg:h-full md:m-0 rounded-md max-w-md relative z-20 bg-white top-24 lg:static lg:max-w-none">
+    <div className="mx-auto fixed top-0 left-0 w-full flex justify-center lg:left-none lg:max-w-5xl md:relative md:top-[-6rem] lg:top-0">
+        <div className="m-4 lg:h-full md:m-0 rounded-md max-w-md relative z-20 bg-white top-24 lg:static lg:max-w-none lg:w-full">
             <div className="p-8 w-full max-w-md flex justify-center md:flex-col lg:py-10 lg:px-24 lg:max-w-none lg:h-full">
                 {menu}
             </div>
