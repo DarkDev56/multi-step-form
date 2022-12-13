@@ -33,7 +33,7 @@ export default function One({ step, setStep })
                     name="Phone Number"
                     type="tel"
                     placeholder="e.g. +1 234 567 890"
-                    value={tel} pattern="[0-9]{9,12}"
+                    value={tel} pattern="[+]?[0-9 ]{9,14}"
                     onChange={(e) => setTel(e.target.value)}
                 />
             </div>

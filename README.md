@@ -14,4 +14,4 @@
 ## Links
 
 - Challenge and Resources : https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ
-- Live Site : https://darkdev56.github.io/multi-step-form/
+- Live Site : https://multi-step-form-beta.vercel.app
