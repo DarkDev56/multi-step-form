@@ -5,7 +5,7 @@
 ## Technologies Used
 
 - **HTML** for markup
-- **TaiwindCSS** for styling
+- **TailwindCSS** for styling
 - **PostCSS** along TailwindCSS
 - **ReactJS** as javascript library
 - **GoogleFonts** for fonts
